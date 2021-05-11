@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
+import Button from "./Button";
 import StyledNav from "./StyledNav";
 
 interface Props {
     themeHandler: () => void;
+    theme: string;
 }
+const RightListItem = styled.li`
+    margin-left: auto;
+    margin-right: 5vmax;
+`;
 
-const Navbar: React.FC<Props> = ({ themeHandler }) => {
+const Navbar: React.FC<Props> = ({ themeHandler, theme }) => {
     return (
         <StyledNav>
             <ul>
@@ -15,13 +22,13 @@ const Navbar: React.FC<Props> = ({ themeHandler }) => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
+                    <Button onClick={() => themeHandler()}>{theme}</Button>
+                </li>
+                <RightListItem>
                     <a href="/" target="_blank" rel="noopener noreferrer">
                         About
                     </a>
-                </li>
-                <li>
-                    <button onClick={() => themeHandler()}>Click me</button>
-                </li>
+                </RightListItem>
             </ul>
         </StyledNav>
     );

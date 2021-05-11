@@ -11,7 +11,7 @@ const App = () => {
     const [theme, setTheme] = useState("dark");
     return (
         <ThemeProvider theme={{ mode: theme }}>
-            <GlobalStyle />
+        <GlobalStyle />
             <HashRouter>
                 <Navbar
                     themeHandler={() =>
@@ -19,6 +19,9 @@ const App = () => {
                             theme === "dark" ? "light" : "dark"
                         )
                     }
+                    theme={`change theme to ${
+                        theme === "dark" ? "light" : "dark"
+                    }`}
                 />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/:id" component={Article} />
