@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import Home from "./Home";
 import Article from "./Article";
-import Navbar from "../Navbar";
+import Navbar from "./UI/Navbar";
 import { GlobalStyle } from "../theme";
 
 const App = () => {
