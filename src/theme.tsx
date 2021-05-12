@@ -1,8 +1,8 @@
 import { createGlobalStyle, css } from "styled-components";
 import theme from "styled-theming";
 
-export const primary = "#c7f8ff";
-export const secondary = "#013574";
+export const primary = "#15f2fd";
+export const secondary = "#324B4D";
 
 const colorTheme = theme("mode", {
     light: css`
