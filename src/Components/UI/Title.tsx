@@ -25,16 +25,17 @@ const StyledH5 = styled.h5`
 const StyledH6 = styled.h6`
     ${titleStyles}
 `;
-
-const Title: React.FC<Props> = ({ title, headerType = 2 }) => {
+const defaultHeader = 2;
+const AdjustOffset = 1;
+const Title: React.FC<Props> = ({ title, headerType = defaultHeader }) => {
     const headerSwitch = [
-        <StyledH1>{title}</StyledH1>,
-        <StyledH2>{title}</StyledH2>,
-        <StyledH3>{title}</StyledH3>,
-        <StyledH4>{title}</StyledH4>,
-        <StyledH5>{title}</StyledH5>,
-        <StyledH6>{title}</StyledH6>,
+        <StyledH1 key={1}>{title}</StyledH1>,
+        <StyledH2 key={2}>{title}</StyledH2>,
+        <StyledH3 key={3}>{title}</StyledH3>,
+        <StyledH4 key={4}>{title}</StyledH4>,
+        <StyledH5 key={5}>{title}</StyledH5>,
+        <StyledH6 key={6}>{title}</StyledH6>,
     ];
-    return headerSwitch[headerType - 1];
+    return headerSwitch[headerType - AdjustOffset];
 };
 export default Title;

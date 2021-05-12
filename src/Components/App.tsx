@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
@@ -7,7 +7,7 @@ import Article from "./Article";
 import Navbar from "./UI/Navbar";
 import { GlobalStyle } from "../Assets/theme";
 
-const App = () => {
+const App:React.FC = () => {
     const [theme, setTheme] = useState("dark");
     return (
         <ThemeProvider theme={{ mode: theme }}>
@@ -19,7 +19,11 @@ const App = () => {
                             theme === "dark" ? "light" : "dark"
                         )
                     }
-                    theme={theme==="dark"?"Change to light theme, I'm a heathen":"Aah!!! it burns, switch back"}
+                    theme={
+                        theme === "dark"
+                            ? "Change to light theme, I'm a heathen"
+                            : "Aah!!! it burns, switch back"
+                    }
                 />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/:id" component={Article} />

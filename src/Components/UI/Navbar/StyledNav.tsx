@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledNav = styled.div`
     min-height: 10vmin;
     position: sticky;
-    top:0;
+    top: 0;
     ul {
         display: flex;
         flex-direction: row;

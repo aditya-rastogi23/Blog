@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { imgUrl, img2 } from "../../constants";
 import { TabbedButtonLayout } from "./TabbedLayout";
@@ -11,33 +11,38 @@ const CardData = [
     {
         image: imgUrl,
         title: "This is a tech title",
+        id: 1,
         description: "This is the card description",
         isTech: true,
     },
     {
         image: img2,
         title: "This is also a tech title",
+        id: 2,
         description: "This is also a card description",
         isTech: true,
     },
     {
         image: imgUrl,
         title: "This is a personal title",
+        id: 3,
         description: "This is also a card description",
     },
     {
         image: img2,
         title: "This is also a personal title",
+        id: 4,
         description: "This is also a card description",
     },
     {
         image: imgUrl,
         title: "This is also a personal title",
+        id: 5,
         description: "This is also a card description",
     },
 ];
 
-const Home = () => {
+const Home: React.FC = () => {
     const [isTech, setTech] = useState(true);
 
     return (

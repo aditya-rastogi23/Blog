@@ -8,6 +8,7 @@ interface CardData {
     description: string;
     image: string;
     isTech?: boolean;
+    id: number;
 }
 interface Props {
     data: CardData[];
@@ -28,9 +29,11 @@ const CardList: React.FC<Props> = ({ data, isTech }) => {
                         : filterer(item.isTech, false)
                 )
                 .map((card) => {
-                    const { title, description, image } = card;
+                    const { title, description, image, id } = card;
                     return (
                         <Card
+                            key={id}
+                            id={id}
                             title={title}
                             description={description}
                             image={image}
