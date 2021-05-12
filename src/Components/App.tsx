@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
@@ -7,7 +7,7 @@ import Article from "./Article";
 import Navbar from "./UI/Navbar";
 import { GlobalStyle } from "../Assets/theme";
 
-const App:React.FC = () => {
+const App: React.FC = () => {
     const [theme, setTheme] = useState("dark");
     return (
         <ThemeProvider theme={{ mode: theme }}>
