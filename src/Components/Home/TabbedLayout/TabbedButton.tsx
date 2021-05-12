@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import theme from "styled-theming";
 
 import Button from "../../UI/Button";
-import { primary, secondary } from "../../../theme";
+import { primary, secondary } from "../../../Assets/theme";
 interface Props {
     isSelected: boolean;
 }

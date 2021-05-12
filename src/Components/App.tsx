@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Home from "./Home";
 import Article from "./Article";
 import Navbar from "./UI/Navbar";
-import { GlobalStyle } from "../theme";
+import { GlobalStyle } from "../Assets/theme";
 
 const App = () => {
     const [theme, setTheme] = useState("dark");
@@ -19,7 +19,7 @@ const App = () => {
                             theme === "dark" ? "light" : "dark"
                         )
                     }
-                    theme={theme==="dark"?"Change to light theme, I'm a heathen":"Aah!!! it burns"}
+                    theme={theme==="dark"?"Change to light theme, I'm a heathen":"Aah!!! it burns, switch back"}
                 />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/:id" component={Article} />
