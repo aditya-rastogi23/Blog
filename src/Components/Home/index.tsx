@@ -1,53 +1,26 @@
 import React, { useState } from "react";
 
-import { imgUrl, img2 } from "../../constants";
+import { imgUrl, img2, title } from "../../Assets/constants";
 import { TabbedButtonLayout } from "./TabbedLayout";
 import { TabbedButton } from "./TabbedLayout/TabbedButton";
 import Title from "../UI/Title";
 import CardList from "./CardList";
 import FlexCentralWrapper from "../UI/FlexCentralWrapper";
+import { Articles } from "../../Assets/constants/";
 
-const CardData = [
-    {
-        image: imgUrl,
-        title: "This is a tech title",
-        id: 1,
-        description: "This is the card description",
-        isTech: true,
-    },
-    {
-        image: img2,
-        title: "This is also a tech title",
-        id: 2,
-        description: "This is also a card description",
-        isTech: true,
-    },
-    {
-        image: imgUrl,
-        title: "This is a personal title",
-        id: 3,
-        description: "This is also a card description",
-    },
-    {
-        image: img2,
-        title: "This is also a personal title",
-        id: 4,
-        description: "This is also a card description",
-    },
-    {
-        image: imgUrl,
-        title: "This is also a personal title",
-        id: 5,
-        description: "This is also a card description",
-    },
-];
+const CardData = Articles.map((Article, idx) => {
+    return {
+        ...Article.cardData,
+        id: idx,
+    };
+});
 
 const Home: React.FC = () => {
     const [isTech, setTech] = useState(true);
 
     return (
         <FlexCentralWrapper>
-            <Title title="Old Ben's Log" headerType={1} />
+            <Title title={title} headerType={1} />
             <TabbedButtonLayout>
                 <TabbedButton onClick={() => setTech(true)} isSelected={isTech}>
                     Tech

@@ -7,7 +7,7 @@ interface CardData {
     title: string;
     description: string;
     image: string;
-    isTech?: boolean;
+    isTech: boolean;
     id: number;
 }
 interface Props {
@@ -15,7 +15,7 @@ interface Props {
     isTech: boolean;
 }
 
-const filterer = (cardIsTech: boolean | undefined, isTech: boolean) => {
+const filterer = (cardIsTech: boolean, isTech: boolean) => {
     return isTech ? cardIsTech : !cardIsTech;
 };
 

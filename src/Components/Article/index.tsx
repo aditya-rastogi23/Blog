@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { RouteComponentProps } from "react-router-dom";
 
-const Article: React.FC = () => {
-    return <div>Hello Article</div>;
+import { ArticleInterface, Articles } from "../../Assets/constants/";
+interface MatchParams {
+    id: string;
+}
+
+const Article: React.FC<RouteComponentProps<MatchParams>> = (props) => {
+    const [ArticleId, setArticleId] = useState("");
+
+    useEffect(() => {
+        setArticleId(props.match.params.id);
+    });
+
+    return <div>Hello Article {ArticleId}</div>;
 };
 export default Article;
