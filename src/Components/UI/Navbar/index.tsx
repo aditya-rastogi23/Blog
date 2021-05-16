@@ -20,9 +20,7 @@ const Navbar: React.FC<Props> = ({ themeHandler, theme }) => {
                     <Button onClick={() => themeHandler()}>{theme}</Button>
                 </li>
                 <li>
-                    <a href="/" target="_blank" rel="noopener noreferrer">
-                        About
-                    </a>
+                    <Link to="/About">About</Link>
                 </li>
             </ul>
         </StyledNav>

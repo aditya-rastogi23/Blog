@@ -6,6 +6,6 @@ export const contents: ArticleInterface = {
         description: "This is the description",
         image: "",
         isTech: false,
-        title: "this is the title",
+        title: "this is the personal Article title",
     },
 };

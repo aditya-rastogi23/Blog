@@ -6,6 +6,7 @@ interface Props {
 }
 const titleStyles = css`
     text-align: center;
+    margin: 1em;
 `;
 const StyledH1 = styled.h1`
     ${titleStyles}

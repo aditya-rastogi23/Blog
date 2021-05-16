@@ -20,5 +20,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         margin-inline: 5%;
+        margin-top:0;
     }
 `;

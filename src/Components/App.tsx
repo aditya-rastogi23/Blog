@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import Home from "./Home";
+import About from "./About";
 import Article from "./Article";
+import Home from "./Home";
 import Navbar from "./UI/Navbar";
+import Container from "./UI/Container";
 import { GlobalStyle } from "../Assets/theme";
 
 const App: React.FC = () => {
@@ -25,8 +27,13 @@ const App: React.FC = () => {
                             : "Aah!!! it burns, switch back"
                     }
                 />
-                <Route exact path="/" component={Home} />
-                <Route exact path="/:id" component={Article} />
+                <Container>
+                    <Switch>
+                        <Route exact path="/About" component={About} />
+                        <Route exact path="/Article/:id" component={Article} />
+                        <Route path="/" component={Home} />
+                    </Switch>
+                </Container>
             </HashRouter>
         </ThemeProvider>
     );

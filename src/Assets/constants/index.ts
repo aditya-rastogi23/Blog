@@ -1,11 +1,6 @@
-import logo from "../SO-styled-components-emmett-disable.png";
-import logo2 from "../crypt.jpg";
+import { contents } from "./TSReact";
+import { contents as personalContent } from "./ToastToNITK";
 
-import { contents } from "./TypescriptBlog";
-import { contents as personalContent } from "./PersonalBlog";
-
-export const imgUrl = logo;
-export const img2 = logo2;
 export const title = "Old Ben's Log";
 
 interface CardData {
@@ -27,7 +22,5 @@ export interface ArticleInterface {
 
 export const Articles: ArticleInterface[] = [
     contents,
-    contents,
     personalContent,
-    contents,
 ];

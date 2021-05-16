@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { imgUrl, img2, title } from "../../Assets/constants";
+import { title } from "../../Assets/constants";
 import { TabbedButtonLayout } from "./TabbedLayout";
 import { TabbedButton } from "./TabbedLayout/TabbedButton";
 import Title from "../UI/Title";

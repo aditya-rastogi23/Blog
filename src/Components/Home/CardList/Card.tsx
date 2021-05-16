@@ -19,7 +19,7 @@ const StyledCard = styled.div<PropsColor>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 0em;
     max-width: 20em;
     min-height: 20em;
     > * {
@@ -41,7 +41,7 @@ const Card: React.FC<Props> = ({ title, description, image, id }) => {
             <img src={image} alt={title} />
             <Title title={title} />
             <p>{description}</p>
-            <Link to={`/${id}`}>View More!</Link>
+            <Link to={`/Article/${id}`}>View More!</Link>
         </StyledCard>
     );
 };
