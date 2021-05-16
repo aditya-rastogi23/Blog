@@ -20,7 +20,4 @@ export interface ArticleInterface {
     cardData: CardData;
 }
 
-export const Articles: ArticleInterface[] = [
-    contents,
-    personalContent,
-];
+export const Articles: ArticleInterface[] = [contents, personalContent];
