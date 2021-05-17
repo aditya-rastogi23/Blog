@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Blog/static/js/main.628a3b47.chunk.js",
-    "main.js.map": "/Blog/static/js/main.628a3b47.chunk.js.map",
+    "main.js": "/Blog/static/js/main.9c7b2dce.chunk.js",
+    "main.js.map": "/Blog/static/js/main.9c7b2dce.chunk.js.map",
     "runtime-main.js": "/Blog/static/js/runtime-main.b8ad157b.js",
     "runtime-main.js.map": "/Blog/static/js/runtime-main.b8ad157b.js.map",
     "static/js/2.ef0f8359.chunk.js": "/Blog/static/js/2.ef0f8359.chunk.js",
@@ -10,13 +10,17 @@
     "static/js/3.f52d160d.chunk.js.map": "/Blog/static/js/3.f52d160d.chunk.js.map",
     "index.html": "/Blog/index.html",
     "static/js/2.ef0f8359.chunk.js.LICENSE.txt": "/Blog/static/js/2.ef0f8359.chunk.js.LICENSE.txt",
+    "static/media/Quantico-Bold.6c65a614.ttf": "/Blog/static/media/Quantico-Bold.6c65a614.ttf",
+    "static/media/Quantico-BoldItalic.ef3d9237.ttf": "/Blog/static/media/Quantico-BoldItalic.ef3d9237.ttf",
+    "static/media/Quantico-Italic.d165f772.ttf": "/Blog/static/media/Quantico-Italic.d165f772.ttf",
+    "static/media/Quantico-Regular.9d0882b9.ttf": "/Blog/static/media/Quantico-Regular.9d0882b9.ttf",
     "static/media/Tsx.1e41f584.png": "/Blog/static/media/Tsx.1e41f584.png",
     "static/media/css.ac0e06fd.png": "/Blog/static/media/css.ac0e06fd.png",
-    "static/media/primary.b492ca66.ttf": "/Blog/static/media/primary.b492ca66.ttf"
+    "static/media/text.2ccde177.ttf": "/Blog/static/media/text.2ccde177.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.b8ad157b.js",
     "static/js/2.ef0f8359.chunk.js",
-    "static/js/main.628a3b47.chunk.js"
+    "static/js/main.9c7b2dce.chunk.js"
   ]
 }
