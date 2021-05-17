@@ -1,10 +1,21 @@
-import styled from "styled-components";
-import { primary } from "../../../Assets/theme";
+import styled, { css } from "styled-components";
+import theme from "styled-theming";
+
+import { primary, secondary } from "../../../Assets/theme";
+
+const shadow = theme("mode", {
+    light: css`
+        box-shadow: 0 0 8px 1px ${secondary};
+    `,
+    dark: css`
+        box-shadow: 0 0 8px 1px ${primary};
+    `,
+});
 
 const StyledNav = styled.div`
     margin-top: 0;
     min-height: 10vmin;
-    box-shadow: 0 0 8px 1px ${primary};
+    ${shadow};
     position: sticky;
     display: flex;
     justify-content: center;
