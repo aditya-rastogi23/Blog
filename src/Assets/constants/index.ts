@@ -23,4 +23,4 @@ export interface ArticleInterface {
     cardData: CardData;
 }
 
-export const Articles: ArticleInterface[] = [contents];
+export const Articles: ArticleInterface[] = [contents, personalContent];

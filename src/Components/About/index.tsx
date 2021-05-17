@@ -50,9 +50,11 @@ const About: React.FC = () => {
                         reason, stay tuned cos ramble I will.
                     </Content>
                     <p> If you wanna know more about me, contact me here:</p>
+                    <FlexCentralWrapper isRow>
+                        {iconsComponents}
+                    </FlexCentralWrapper>
                 </FlexCentralWrapper>
             </Container>
-            <FlexCentralWrapper isRow>{iconsComponents}</FlexCentralWrapper>
         </FlexCentralWrapper>
     );
 };

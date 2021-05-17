@@ -8,6 +8,7 @@ import Home from "./Home";
 import Navbar from "./UI/Navbar";
 import Container from "./UI/Container";
 import { GlobalStyle } from "../Assets/theme";
+import ScrollToTop from "./Utility/ScrollToTop";
 
 const App: React.FC = () => {
     const [theme, setTheme] = useState("dark");
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <ThemeProvider theme={{ mode: theme }}>
             <GlobalStyle />
             <HashRouter>
+                <ScrollToTop />
                 <Navbar
                     themeHandler={() =>
                         setTheme((theme) =>
