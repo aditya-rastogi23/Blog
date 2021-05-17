@@ -184,7 +184,7 @@ export const contents: ArticleInterface = {
             contentType: "link",
             content:
                 "https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html",
-            title: "Migrating guide",
+            title: "Migrating",
         },
     ],
     cardData: {

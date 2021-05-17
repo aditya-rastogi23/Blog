@@ -1,7 +1,7 @@
 {
     "name": "blog",
     "version": "0.1.0",
-    "homepage": "https://aditya-rastogi23.github.io/blog",
+    "homepage": "https://aditya-rastogi23.github.io/Blog/",
     "private": true,
     "dependencies": {
         "@styled-icons/simple-icons": "^10.33.0",
