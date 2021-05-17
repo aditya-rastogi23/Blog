@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
 interface Props {
-    title: string;
     headerType?: number;
 }
 const titleStyles = css`
@@ -28,14 +27,14 @@ const StyledH6 = styled.h6`
 `;
 const defaultHeader = 2;
 const AdjustOffset = 1;
-const Title: React.FC<Props> = ({ title, headerType = defaultHeader }) => {
+const Title: React.FC<Props> = ({ children, headerType = defaultHeader }) => {
     const headerSwitch = [
-        <StyledH1 key={1}>{title}</StyledH1>,
-        <StyledH2 key={2}>{title}</StyledH2>,
-        <StyledH3 key={3}>{title}</StyledH3>,
-        <StyledH4 key={4}>{title}</StyledH4>,
-        <StyledH5 key={5}>{title}</StyledH5>,
-        <StyledH6 key={6}>{title}</StyledH6>,
+        <StyledH1 key={1}>{children}</StyledH1>,
+        <StyledH2 key={2}>{children}</StyledH2>,
+        <StyledH3 key={3}>{children}</StyledH3>,
+        <StyledH4 key={4}>{children}</StyledH4>,
+        <StyledH5 key={5}>{children}</StyledH5>,
+        <StyledH6 key={6}>{children}</StyledH6>,
     ];
     return headerSwitch[headerType - AdjustOffset];
 };

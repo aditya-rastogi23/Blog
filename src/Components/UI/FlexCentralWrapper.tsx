@@ -5,6 +5,7 @@ interface Props {
     basis?: string;
     isStretch?: boolean;
     gap?: string;
+    width?: string;
 }
 const FlexCentralWrapper = styled.div<Props>`
     display: flex;

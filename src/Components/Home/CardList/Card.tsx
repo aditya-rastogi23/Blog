@@ -24,12 +24,14 @@ const StyledCard = styled.div<PropsColor>`
     min-height: 20em;
     > * {
         margin: 1em;
+        line-height: 1.1;
     }
     > img {
         width: 90%;
     }
     p {
         text-align: center;
+        line-height: 1.6;
     }
 `;
 
@@ -39,7 +41,7 @@ const Card: React.FC<Props> = ({ title, description, image, id }) => {
     return (
         <StyledCard color={color}>
             <img src={image} alt={title} />
-            <Title title={title} />
+            <Title>{title}</Title>
             <p>{description}</p>
             <Link to={`/Article/${id}`}>View More!</Link>
         </StyledCard>

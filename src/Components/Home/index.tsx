@@ -20,7 +20,7 @@ const Home: React.FC = () => {
 
     return (
         <FlexCentralWrapper>
-            <Title title={title} headerType={1} />
+            <Title headerType={1}>{title}</Title>
             <TabbedButtonLayout>
                 <TabbedButton onClick={() => setTech(true)} isSelected={isTech}>
                     Tech

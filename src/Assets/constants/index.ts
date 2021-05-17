@@ -11,8 +11,11 @@ interface CardData {
 }
 
 interface Content {
-    contentType: "text" | "link" | "image";
+    contentType: "text" | "link" | "image" | "link and text";
     content: string;
+    title?: string;
+    textAfter?: string;
+    textBefore?: string;
 }
 
 export interface ArticleInterface {

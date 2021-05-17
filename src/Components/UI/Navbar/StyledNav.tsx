@@ -16,6 +16,10 @@ const StyledNav = styled.div`
         align-items: center;
         list-style-type: none;
         flex-grow: 1;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0;
+        }
     }
     ul * {
         margin: auto;

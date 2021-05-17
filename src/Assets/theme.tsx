@@ -19,7 +19,6 @@ export const GlobalStyle = createGlobalStyle`
         ${colorTheme};
     }
     body {
-        margin-inline: 5%;
-        margin-top:0;
+        margin:0 5%;
     }
 `;
