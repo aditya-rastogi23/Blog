@@ -1,6 +1,6 @@
 # Blog micro site
 
-This is the repo for my blog micro site. I'll be using this for both tech and personal blogs.
+This is the repo for my blog micro site [Live here](https://aditya-rastogi23.github.io/Blog/#/). I'll be using this for both tech and personal blogs.
 
 ---
 
